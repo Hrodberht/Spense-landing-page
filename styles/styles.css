@@ -1,7 +1,7 @@
 /********** Base **********/
 
 @import url('normalize.css');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 html {
     box-sizing: border-box;
@@ -16,12 +16,107 @@ html {
     --black: hsl(0, 0%, 0%);
     --gray: hsl(36, 14%, 93%);
     --dark-gray: hsl(0, 0%, 62%);
+    --dark-brown: hsl(44, 14%, 31%);
+}
+
+body {
+    font-family: Cabin, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: var(--dark-brown);
+    background-color: var(--gray);
+}
+
+p {
+    max-width: 70ch;
+}
+
+button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 /********** Utilities **********/
 
+.hidden {
+    display: none;
+}
+
+.p-container {
+    padding: 0 15px;
+}
+
 /********** Header **********/
 
+.offer-div {
+    background-color: var(--black);
+    padding: 15px 30px;
+    margin: 0 0 25px;
+}
+
+.offer {
+    margin: 0;
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+}
+
+.offer--underline {
+    text-decoration: underline;
+}
+
+.header-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.logo {
+    font-size: 1.3em;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: var(--black);
+}
+
 /********** Main **********/
+
+/* Intro */
+
+.intro__img {
+    max-width: 100%;
+}
+
+.intro__title {
+    color: var(--black);
+    font-size: 2.3em;
+}
+
+.intro__description {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.intro__list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.intro__list-item {
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+.checkmark {
+    vertical-align: text-bottom;
+    padding-right: 10px;
+}
 
 /********** Footer **********/
