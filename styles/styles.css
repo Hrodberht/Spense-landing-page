@@ -1,0 +1,27 @@
+/********** Base **********/
+
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --gray: hsl(36, 14%, 93%);
+    --dark-gray: hsl(0, 0%, 62%);
+}
+
+/********** Utilities **********/
+
+/********** Header **********/
+
+/********** Main **********/
+
+/********** Footer **********/
