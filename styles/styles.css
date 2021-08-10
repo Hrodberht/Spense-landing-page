@@ -52,7 +52,7 @@ button {
 
 /********** Header **********/
 
-.offer-div {
+.offer-container {
     background-color: var(--black);
     padding: 15px 30px;
     margin: 0 0 25px;
@@ -69,7 +69,7 @@ button {
     text-decoration: underline;
 }
 
-.header-div {
+.header-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
@@ -117,6 +117,125 @@ button {
 .checkmark {
     vertical-align: text-bottom;
     padding-right: 10px;
+}
+
+.intro__signup {
+    margin: 0 0 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.intro__email {
+    padding: 15px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+    color: var(--dark-gray);
+    font-size: 1.2em;
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+.intro__button {
+    padding: 16px;
+    font-size: 1.2em;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 5px;
+}
+
+/* Partners */
+
+.partners {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.partners__logo {
+    max-width: 130px;
+}
+
+.partners__pinterest-logo {
+    display: none;
+}
+
+.partners__twitter-logo {
+    display: none;
+}
+
+/* Payments */
+
+.payments {
+    background-color: var(--white);
+}
+
+.payments__container {
+    background-color: var(--gray);
+    padding: 30px 30px 0;
+    border-radius: 7px;
+}
+
+.payments__title {
+    color: var(--black);
+    font-size: 2.3em;
+}
+
+.payments__description {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.payments__link-container {
+    margin: 0 0 40px;
+}
+
+.payments__link {
+    color: var(--dark-brown);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.payments__image {
+    max-width: 100%;
+}
+
+/* Editor */
+
+.editor {
+    background-color: var(--white);
+}
+
+.editor__title {
+    color: var(--black);
+    font-size: 2.3em;
+    margin: 0 0 10px;
+    padding-top: 40px;
+}
+
+.editor__description {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.editor__link-container {
+    margin-bottom: 30px;
+}
+
+.editor__link {
+    color: var(--dark-brown);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.editor__image-container {
+    padding-bottom: 20px;
+}
+
+.editor__image {
+    max-width: 100%;
 }
 
 /********** Footer **********/
