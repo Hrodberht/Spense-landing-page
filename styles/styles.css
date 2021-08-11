@@ -89,7 +89,9 @@ button {
 /* Intro */
 
 .intro__img {
+    display: block;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .intro__title {
@@ -199,7 +201,9 @@ button {
 }
 
 .payments__image {
+    display: block;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 /* Editor */
@@ -235,7 +239,54 @@ button {
 }
 
 .editor__image {
+    display: block;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 /********** Footer **********/
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer__logo-link {
+    color: var(--white);
+}
+
+.footer__description {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: var(--dark-gray);
+    margin: 0 0 30px;
+}
+
+.footer__list-title {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+.footer__list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer__list-item {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    color: var(--dark-gray);
+}
+
+.footer__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
