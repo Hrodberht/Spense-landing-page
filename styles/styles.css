@@ -72,6 +72,7 @@ button {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 25px;
 }
 
@@ -82,6 +83,10 @@ button {
 .logo__link {
     text-decoration: none;
     color: var(--black);
+}
+
+.nav-large {
+    display: none;
 }
 
 /********** Main **********/
@@ -289,4 +294,89 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 900px) {
+
+/********** Utilities **********/ 
+
+.p-container {
+    padding: 0 30px;
+}
+    
+/********** Header **********/
+
+.nav-large {
+    display: block;
+    width: 500px;
+}
+
+.nav-btn {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+
+}
+
+.nav__list {
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+/********** Main **********/
+
+/* Intro */
+
+.intro__signup {
+    max-width: 400px;
+}
+
+.intro__title {
+    max-width: 500px;
+    font-size: 3.2em;
+    margin-bottom: 0;
+}
+
+/* Partners */
+
+.partners__pinterest-logo {
+    display: block;
+}
+
+@media only screen and (min-width: 850px) and (max-width: 900px) {
+
+.partners__twitter-logo {
+        display: block;
+    }
+}
+
+.partners {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* Payments */
+
+.payments__container {
+    padding: 80px;
+}
+
+.payments__title {
+    margin-top: 0;
+    max-width: 350px;
+    margin-bottom: 8px;
+}
+
+.payments__description {
+    max-width: 500px;
+}
+
+/********** Footer **********/
+
+
+
 }
