@@ -293,7 +293,6 @@ button {
 .footer__nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 
 @media only screen and (min-width: 720px) and (max-width: 900px) {
@@ -375,8 +374,38 @@ button {
     max-width: 500px;
 }
 
+/* Editor */
+
+.editor__image-container {
+    padding-bottom: 0;
+}
+
 /********** Footer **********/
 
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 52% 48%;
+    column-gap: 40px;
+}
 
+.footer__logo {
+    margin-top: 0;
+}
+
+.footer__nav {
+    display: block;
+    display: flex;
+    gap: 80px;
+}
+
+.footer__nav-1 {
+    order: 3;
+}
+
+.footer__nav-2 {
+    order: 2;
+}
 
 }
