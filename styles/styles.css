@@ -59,7 +59,7 @@ button {
 }
 
 .offer {
-    margin: 0;
+    margin: 0 auto;
     color: var(--white);
     font-weight: 600;
     text-align: center;
@@ -295,7 +295,7 @@ button {
     grid-template-columns: 1fr 1fr;
 }
 
-@media only screen and (min-width: 720px) and (max-width: 900px) {
+@media only screen and (min-width: 720px) {
 
 /********** Utilities **********/ 
 
@@ -407,5 +407,42 @@ button {
 .footer__nav-2 {
     order: 2;
 }
+
+}
+
+@media only screen and (min-width: 900px) {
+
+/********** Utilities **********/
+
+.p-container {
+    padding: 0 150px;
+}
+
+/********** Header **********/
+
+.offer {
+    max-width: 100%;
+}
+
+.nav-large {
+    width: 65%;
+}
+
+.nav__list {
+    gap: 40px;
+}
+
+.nav__item-4 {
+    margin-left: auto;
+}
+
+.intro__button {
+    font-size: 1.1em;
+    width: 127px;
+}
+
+/********** Main **********/
+
+/********** Footer **********/
 
 }
