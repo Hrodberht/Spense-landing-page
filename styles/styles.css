@@ -153,12 +153,16 @@ button {
 
 /* Partners */
 
-.partners {
+.partners__container {
     background-color: var(--white);
+}
+
+.partners {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 40px;
+    align-items: center;
 }
 
 .partners__logo {
@@ -170,6 +174,18 @@ button {
 }
 
 .partners__twitter-logo {
+    display: none;
+}
+
+.partners__reddit-logo {
+    display: none;
+}
+
+.partners__google-logo {
+    display: none;
+}
+
+.partners__slack-logo {
     display: none;
 }
 
@@ -346,7 +362,7 @@ button {
     display: block;
 }
 
-@media only screen and (min-width: 850px) and (max-width: 900px) {
+@media only screen and (min-width: 850px) {
 
 .partners__twitter-logo {
         display: block;
@@ -361,7 +377,7 @@ button {
 /* Payments */
 
 .payments__container {
-    padding: 80px;
+    padding-top: 80px;
 }
 
 .payments__title {
@@ -410,7 +426,7 @@ button {
 
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1200px) {
 
 /********** Utilities **********/
 
@@ -418,10 +434,18 @@ button {
     padding: 0 150px;
 }
 
+.mw-container {
+    max-width: 1660px;
+}
+
 /********** Header **********/
 
 .offer {
     max-width: 100%;
+}
+
+.header-container {
+    margin: 0 auto 25px;
 }
 
 .nav-large {
@@ -442,6 +466,77 @@ button {
 }
 
 /********** Main **********/
+
+/* Intro */
+
+.intro {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.intro__hero {
+    order: 2;
+}
+
+.intro__text-content {
+    order: 1;
+    align-self: center;
+}
+
+.intro__description {
+    max-width: 50ch;
+}
+
+/* Partners */
+
+@media only screen and (min-width: 1250px) {
+
+    .partners__reddit-logo {
+        display: block;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .partners__google-logo {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .partners__slack-logo {
+        display: block;
+    }
+}
+
+.partners {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+/* Payments */
+
+.payments__container {
+    margin: 0 auto;
+    max-width: 1360px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 30px;
+    padding: 50px 75px 0;
+
+}
+
+.payments__text-content {
+    align-self: center;
+}
+
+.payments__image-container {
+    align-self: flex-end;
+}
 
 /********** Footer **********/
 
