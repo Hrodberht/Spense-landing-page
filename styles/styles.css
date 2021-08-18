@@ -538,6 +538,25 @@ button {
     align-self: flex-end;
 }
 
+/* Editor */
+
+.editor__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 1360px;
+}
+
+.editor__text-content {
+    order: 2;
+    align-self: center;
+}
+
+.editor__image-container {
+    order: 1;
+}
+
 /********** Footer **********/
 
 }
