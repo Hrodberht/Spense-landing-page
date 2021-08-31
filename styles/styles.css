@@ -379,6 +379,10 @@ button {
     margin-bottom: 0;
 }
 
+.intro__img {
+    max-width: 650px;
+}
+
 /* Partners */
 
 .partners__pinterest-logo {
@@ -514,6 +518,10 @@ button {
 
 .intro__description {
     max-width: 50ch;
+}
+
+.intro__img {
+    max-width: 100%;
 }
 
 /* Partners */
